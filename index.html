@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail" data-bg-color="#141420">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#8b7cf6"/>
+        <stop offset="1" stop-color="#5b4fd9"/>
+      </linearGradient>
+    </defs>
+    <circle cx="100" cy="100" r="70" fill="url(#g)" opacity="0.25"/>
+    <circle cx="100" cy="78" r="30" fill="url(#g)"/>
+    <path d="M50 170 Q50 118 100 118 Q150 118 150 170 Z" fill="url(#g)"/>
+  </svg>
+</template>
+<helmet>
+  <title>Hussnain Ali Rajput | Virtual Assistant & Business Operations Manager</title>
+  <meta name="description" content="Hussnain Ali Rajput is a Top Rated Upwork Virtual Assistant and Business Operations Manager helping coaches, mentors & businesses grow and scale online through social media, community, sales and automation.">
+  <meta name="keywords" content="Virtual Assistant, Business Operations Manager, Social Media Management, Community Management, OBM, Upwork Top Rated, Hussnain Ali Rajput">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Hussnain Ali Rajput">
+  <link rel="canonical" href="https://hussnainalirajput.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Hussnain Ali Rajput | Virtual Assistant & Business Operations Manager">
+  <meta property="og:description" content="Top Rated Upwork Virtual Assistant & Business Operations Manager helping coaches, mentors & businesses grow and scale online.">
+  <link rel="icon" href="assets/hussnain-photo.png">
+  <meta property="og:image" content="assets/hussnain-photo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hussnain Ali Rajput | Virtual Assistant & Business Operations Manager">
+  <meta name="twitter:description" content="Top Rated Upwork Virtual Assistant & Business Operations Manager helping coaches, mentors & businesses grow and scale online.">
+  <meta name="twitter:image" content="assets/hussnain-photo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hussnain Ali Rajput",
+    "jobTitle": "Virtual Assistant & Business Operations Manager",
+    "description": "Helping coaches, mentors & businesses grow and scale online.",
+    "image": "assets/hussnain-photo.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/hussnain-ali-top-rated",
+      "https://x.com/HasNainALiTwet",
+      "https://www.instagram.com/itshussnainalirajput",
+      "https://www.upwork.com/freelancers/~013eedfa62fd7269a3"
+    ],
+    "email": "mailto:metasocialmanager@gmail.com"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <style>
+    body { margin: 0; }
+    * { box-sizing: border-box; }
+    a { color: inherit; text-decoration: none; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes roleFade { 0% { opacity: 0; transform: translateY(10px); } 12% { opacity: 1; transform: translateY(0); } 88% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-10px); } }
+    @keyframes waveHand { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(20deg); } 50% { transform: rotate(-15deg); } 75% { transform: rotate(20deg); } }
+    @keyframes bounceIcon { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  </style>
+</helmet>
+
+<div style="{{ pageStyle }}">
+
+  <div style="position:fixed;top:20px;right:20px;z-index:50;display:flex;align-items:center;gap:8px;background:{{ toggleBg }};border-radius:999px;padding:6px;animation:fadeIn 0.6s ease 0.4s both;">
+    <button onClick="{{ setLight }}" style="{{ sunBtnStyle }}">☀</button>
+    <button onClick="{{ setDark }}" style="{{ moonBtnStyle }}">🌙</button>
+  </div>
+
+  <main>
+  <section style="max-width:1280px;margin:0 auto;padding:clamp(70px,12vw,100px) clamp(20px,5vw,40px) 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,6vw,56px);align-items:center;">
+    <div>
+      <div style="font-size:20px;color:{{ subColor }};margin-bottom:14px;animation:fadeUp 0.6s ease 0.05s both;">Hi, I am</div>
+      <h1 style="font-size:clamp(36px,5vw,64px);font-weight:700;line-height:1.05;margin:0 0 18px;color:{{ headColor }};animation:fadeUp 0.6s ease 0.15s both;">
+        Hussnain Ali Rajput <span style="display:inline-block;transform-origin:70% 70%;animation:waveHand 0.7s ease 1s 2;">👋</span>
+      </h1>
+      <div style="font-size:26px;font-weight:600;color:{{ subColor }};margin-bottom:22px;min-height:1.3em;animation:fadeUp 0.6s ease 0.25s both;">
+        <span key="{{ roleIndex }}" style="display:inline-block;animation:roleFade 3.5s ease both;">{{ currentRole }}</span>
+      </div>
+      <p style="font-size:19px;line-height:1.6;color:{{ bodyColor }};max-width:520px;margin:0 0 34px;animation:fadeUp 0.6s ease 0.35s both;">
+        Helping coaches, mentors & businesses grow and scale online.
+      </p>
+      <a href="https://www.linkedin.com/in/hussnain-ali-top-rated" target="_blank" rel="noopener noreferrer me" style="{{ linkedinBtnStyle }}animation:fadeUp 0.6s ease 0.45s both;">Chat on LinkedIn</a>
+    </div>
+    <div style="position:relative;max-width:340px;margin:0 auto;animation:fadeUp 0.7s ease 0.2s both;">
+      <div style="position:absolute;top:-24px;right:-24px;width:180px;height:180px;border-radius:50%;background:{{ accentGlow }};filter:blur(6px);z-index:0;"></div>
+      <div style="position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 24px 48px -16px rgba(0,0,0,0.4);z-index:1;">
+        <img src="assets/hussnain-photo.png" alt="Hussnain Ali Rajput, Virtual Assistant and Business Operations Manager" loading="eager" decoding="async" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+      </div>
+      <div style="position:absolute;left:-18px;top:24px;background:{{ cardBg }};border:1px solid {{ cardBorder }};border-radius:14px;padding:10px 16px;display:flex;align-items:center;gap:8px;box-shadow:0 10px 24px -8px rgba(0,0,0,0.3);z-index:2;">
+        <span style="font-size:18px;line-height:1;">⭐</span>
+        <div style="display:flex;flex-direction:column;white-space:nowrap;">
+          <span style="font-size:13px;font-weight:700;color:{{ headColor }};line-height:1.4;">Top Rated</span>
+          <span style="font-size:11px;color:{{ subColor }};line-height:1.4;">on Upwork</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1280px;margin:0 auto;padding:40px clamp(20px,5vw,40px) 20px;">
+    <h2 style="font-size:32px;font-weight:700;color:{{ headColor }};margin:0 0 32px;">Where would you like to start?</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="4">
+        <sc-if value="{{ p.isSkills }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ openSkillsModal }}" style="{{ cardStyle }}display:block;text-align:left;width:100%;border:1px solid {{ cardBorder }};cursor:pointer;font-family:inherit;overflow:hidden;">
+            <div style="font-size:34px;margin-bottom:16px;animation:bounceIcon 2.4s ease-in-out infinite;">{{ p.emoji }}</div>
+            <div style="font-size:22px;font-weight:700;color:{{ headColor }};margin-bottom:10px;">{{ p.title }}</div>
+            <div style="font-size:16px;line-height:1.5;color:{{ bodyColor }};margin-bottom:14px;">{{ p.desc }}</div>
+
+          </button>
+        </sc-if>
+        <sc-if value="{{ p.isProjects }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ openProjectsModal }}" style="{{ cardStyle }}display:block;text-align:left;width:100%;border:1px solid {{ cardBorder }};cursor:pointer;font-family:inherit;overflow:hidden;">
+            <div style="font-size:34px;margin-bottom:16px;animation:bounceIcon 2.4s ease-in-out infinite;animation-delay:0.2s;">{{ p.emoji }}</div>
+            <div style="font-size:22px;font-weight:700;color:{{ headColor }};margin-bottom:10px;">{{ p.title }}</div>
+            <div style="font-size:16px;line-height:1.5;color:{{ bodyColor }};margin-bottom:14px;">{{ p.desc }}</div>
+
+          </button>
+        </sc-if>
+        <sc-if value="{{ p.isLearnFree }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ openComingSoonModal }}" style="{{ cardStyle }}display:block;text-align:left;width:100%;border:1px solid {{ cardBorder }};cursor:pointer;font-family:inherit;overflow:hidden;">
+            <div style="font-size:34px;margin-bottom:16px;animation:bounceIcon 2.4s ease-in-out infinite;animation-delay:0.4s;">{{ p.emoji }}</div>
+            <div style="font-size:22px;font-weight:700;color:{{ headColor }};margin-bottom:10px;">{{ p.title }}</div>
+            <div style="font-size:16px;line-height:1.5;color:{{ bodyColor }};margin-bottom:14px;">{{ p.desc }}</div>
+
+          </button>
+        </sc-if>
+        <sc-if value="{{ p.isPublic }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ openPublicModal }}" style="{{ cardStyle }}display:block;text-align:left;width:100%;border:1px solid {{ cardBorder }};cursor:pointer;font-family:inherit;overflow:hidden;">
+            <div style="font-size:34px;margin-bottom:16px;animation:bounceIcon 2.4s ease-in-out infinite;animation-delay:0.6s;">{{ p.emoji }}</div>
+            <div style="font-size:22px;font-weight:700;color:{{ headColor }};margin-bottom:10px;">{{ p.title }}</div>
+            <div style="font-size:16px;line-height:1.5;color:{{ bodyColor }};margin-bottom:14px;">{{ p.desc }}</div>
+
+          </button>
+        </sc-if>
+      </sc-for>
+    </div>
+  </section>
+
+  <sc-if value="{{ skillsModalOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeSkillsModal }}" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;animation:fadeIn 0.2s ease both;">
+      <div onClick="{{ stopPropagation }}" style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:20px;max-width:1100px;width:100%;max-height:85vh;overflow-y:auto;padding:40px;position:relative;">
+        <button onClick="{{ closeSkillsModal }}" style="position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid {{ cardBorder }};background:{{ cardBg }};color:{{ headColor }};font-size:18px;cursor:pointer;">✕</button>
+        <h2 style="font-size:28px;font-weight:700;color:{{ headColor }};margin:0 0 8px;">My Skills & Expertise</h2>
+        <p style="font-size:16px;color:{{ bodyColor }};margin:0 0 28px;">Helping coaches, mentors & businesses grow and scale online.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+          <sc-for list="{{ sides }}" as="s" hint-placeholder-count="14">
+            <div style="{{ cardStyle }}">
+              <div style="font-size:30px;margin-bottom:14px;">{{ s.emoji }}</div>
+              <div style="font-size:19px;font-weight:700;color:{{ headColor }};margin-bottom:10px;">{{ s.title }}</div>
+              <div style="font-size:15px;line-height:1.6;color:{{ bodyColor }};">{{ s.desc }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="{{ achieveBarStyle }}">
+          <span>⭐ Top Rated on Upwork</span>
+          <span>✅ 100% Job Success Score</span>
+          <span>🤝 Trusted by Coaches, Mentors & Businesses Worldwide</span>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ comingSoonOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeComingSoonModal }}" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;animation:fadeIn 0.2s ease both;">
+      <div onClick="{{ stopPropagation }}" style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:20px;max-width:640px;width:100%;max-height:85vh;overflow-y:auto;padding:36px;position:relative;">
+        <button onClick="{{ closeComingSoonModal }}" style="position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid {{ cardBorder }};background:{{ cardBg }};color:{{ headColor }};font-size:18px;cursor:pointer;">✕</button>
+        <h2 style="font-size:22px;font-weight:700;color:{{ headColor }};margin:0 0 6px;">📚 Learn Free</h2>
+        <p style="font-size:14px;color:{{ bodyColor }};margin:0 0 24px;">Free resources material for everyone.</p>
+
+        <div style="{{ cardStyle }}padding:22px;margin-bottom:20px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:14px;">
+            <h3 style="font-size:17px;font-weight:700;color:{{ headColor }};margin:0;">Learning Resources</h3>
+            <button onClick="{{ openAdminAdd }}" title="Admin: add resource" style="border:none;background:none;color:{{ subColor }};cursor:pointer;font-size:15px;padding:2px;">🔒</button>
+          </div>
+
+          <sc-if value="{{ adminAddOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:12px;padding:16px;margin-bottom:16px;">
+              <input value="{{ resTitle }}" onChange="{{ onResTitleChange }}" placeholder="Title" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;margin-bottom:10px;">
+              <input value="{{ resUrl }}" onChange="{{ onResUrlChange }}" placeholder="URL or PDF link" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;margin-bottom:10px;">
+              <textarea value="{{ resDesc }}" onChange="{{ onResDescChange }}" placeholder="Description" rows="3" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;resize:vertical;margin-bottom:12px;"></textarea>
+              <div style="display:flex;gap:8px;justify-content:flex-end;">
+                <button onClick="{{ cancelAdminAdd }}" style="padding:8px 16px;border-radius:999px;border:1px solid {{ cardBorder }};background:none;color:{{ subColor }};font-size:13px;cursor:pointer;font-family:inherit;">Cancel</button>
+                <button onClick="{{ submitResource }}" disabled="{{ resDisabled }}" style="padding:8px 18px;border-radius:999px;border:none;background:{{ headColor }};color:{{ bg }};font-weight:700;font-size:13px;cursor:pointer;opacity:{{ resButtonOpacity }};font-family:inherit;">Add Resource</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-for list="{{ resources }}" as="r" hint-placeholder-count="0">
+            <div style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:12px;padding:16px 18px;margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid {{ cardBorder }};padding-bottom:8px;">
+                <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" style="font-size:16px;font-weight:700;color:{{ headColor }};text-decoration:underline;text-decoration-color:{{ cardBorder }};text-underline-offset:3px;">{{ r.title }}</a>
+                <button onClick="{{ r.onDelete }}" aria-label="Delete resource" style="border:none;background:none;cursor:pointer;padding:4px;flex:none;"><span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;"></span></button>
+              </div>
+              <div style="font-size:14px;line-height:1.5;color:{{ bodyColor }};margin-top:8px;padding-bottom:8px;border-bottom:1px solid {{ cardBorder }};">{{ r.desc }}</div>
+              <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open link" style="width:22px;height:22px;flex:none;border-radius:50%;background:#22c55e;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;">↗</a>
+                <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:{{ subColor }};">{{ r.url }}</a>
+              </div>
+            </div>
+          </sc-for>
+          <sc-if value="{{ resourcesEmpty }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size:14px;color:{{ subColor }};text-align:center;padding:12px 0;">No resources yet — stay tuned!</p>
+          </sc-if>
+        </div>
+
+        <div style="{{ cardStyle }}padding:22px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:14px;">
+            <h3 style="font-size:17px;font-weight:700;color:{{ headColor }};margin:0;">Admin Blog</h3>
+            <button onClick="{{ openBlogAdd }}" title="Admin: add blog post" style="border:none;background:none;color:{{ subColor }};cursor:pointer;font-size:15px;padding:2px;">🔒</button>
+          </div>
+
+          <sc-if value="{{ blogAddOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:12px;padding:16px;margin-bottom:16px;">
+              <input value="{{ blogTitle }}" onChange="{{ onBlogTitleChange }}" placeholder="Title" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;margin-bottom:10px;">
+              <textarea value="{{ blogBody }}" onChange="{{ onBlogBodyChange }}" placeholder="Write the paragraph..." rows="4" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;resize:vertical;margin-bottom:12px;"></textarea>
+              <div style="display:flex;gap:8px;justify-content:flex-end;">
+                <button onClick="{{ cancelBlogAdd }}" style="padding:8px 16px;border-radius:999px;border:1px solid {{ cardBorder }};background:none;color:{{ subColor }};font-size:13px;cursor:pointer;font-family:inherit;">Cancel</button>
+                <button onClick="{{ submitBlogPost }}" disabled="{{ blogDisabled }}" style="padding:8px 18px;border-radius:999px;border:none;background:{{ headColor }};color:{{ bg }};font-weight:700;font-size:13px;cursor:pointer;opacity:{{ blogButtonOpacity }};font-family:inherit;">Publish</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-for list="{{ blogPosts }}" as="b" hint-placeholder-count="0">
+            <div style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:12px;padding:16px 18px;margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid {{ cardBorder }};padding-bottom:8px;">
+                <span style="font-size:16px;font-weight:700;color:{{ headColor }};">{{ b.title }}</span>
+                <button onClick="{{ b.onDelete }}" aria-label="Delete post" style="border:none;background:none;cursor:pointer;padding:4px;flex:none;"><span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;"></span></button>
+              </div>
+              <div style="font-size:14px;line-height:1.6;color:{{ bodyColor }};margin-top:8px;">{{ b.body }}</div>
+              <div style="font-size:12px;color:{{ subColor }};margin-top:8px;">{{ b.date }}</div>
+            </div>
+          </sc-for>
+          <sc-if value="{{ blogEmpty }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size:14px;color:{{ subColor }};text-align:center;padding:12px 0;">No posts yet — stay tuned!</p>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ publicOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closePublicModal }}" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;animation:fadeIn 0.2s ease both;">
+      <div onClick="{{ stopPropagation }}" style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:20px;max-width:560px;width:100%;max-height:85vh;overflow-y:auto;padding:36px;position:relative;">
+        <button onClick="{{ closePublicModal }}" style="position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid {{ cardBorder }};background:{{ cardBg }};color:{{ headColor }};font-size:18px;cursor:pointer;">✕</button>
+        <h2 style="font-size:22px;font-weight:700;color:{{ headColor }};margin:0 0 6px;">Public Wall</h2>
+        <p style="font-size:14px;color:{{ bodyColor }};margin:0 0 20px;">Read what others left, or write your own (max 100 words).</p>
+
+        <sc-if value="{{ publicComposeOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="{{ cardStyle }}padding:16px 18px;margin-bottom:20px;">
+            <input value="{{ publicName }}" onChange="{{ onPublicNameChange }}" placeholder="Your name" style="width:100%;padding:0;border:none;background:none;color:{{ headColor }};font-size:15px;font-weight:700;font-family:inherit;margin-bottom:10px;outline:none;">
+            <textarea value="{{ publicMsg }}" onChange="{{ onPublicMsgChange }}" placeholder="Write your message..." rows="3" style="width:100%;padding:0;border:none;background:none;color:{{ bodyColor }};font-size:14px;font-family:inherit;resize:vertical;outline:none;"></textarea>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span style="font-size:12px;color:{{ subColor }};">{{ publicWordCount }}/100 words</span>
+              <div style="display:flex;gap:8px;">
+                <button onClick="{{ cancelPublicCompose }}" style="padding:8px 16px;border-radius:999px;border:1px solid {{ cardBorder }};background:none;color:{{ subColor }};font-size:13px;cursor:pointer;font-family:inherit;">Cancel</button>
+                <button onClick="{{ submitPublicMsg }}" disabled="{{ publicDisabled }}" style="padding:8px 18px;border-radius:999px;border:none;background:{{ headColor }};color:{{ bg }};font-weight:700;font-size:13px;cursor:pointer;opacity:{{ publicButtonOpacity }};font-family:inherit;">Post</button>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ publicComposeClosed }}" hint-placeholder-val="{{ true }}">
+          <button onClick="{{ openPublicCompose }}" style="width:100%;text-align:left;padding:14px 18px;border-radius:14px;border:1px dashed {{ cardBorder }};background:none;color:{{ subColor }};font-size:14px;cursor:pointer;font-family:inherit;margin-bottom:20px;">✏️ Write a message...</button>
+        </sc-if>
+
+        <div>
+          <div style="font-size:13px;font-weight:700;color:{{ subColor }};text-transform:uppercase;letter-spacing:0.5px;margin-bottom:14px;">{{ publicCountLabel }}</div>
+          <sc-if value="{{ dataLoading }}" hint-placeholder-val="{{ false }}">
+            <div style="{{ cardStyle }}padding:16px 18px;margin-bottom:12px;opacity:0.5;">Loading…</div>
+          </sc-if>
+          <sc-for list="{{ publicMessages }}" as="m" hint-placeholder-count="0">
+            <div style="{{ cardStyle }}padding:16px 18px;margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;">
+                <span style="font-size:15px;font-weight:700;color:{{ headColor }};">{{ m.name }}</span>
+                <div style="display:flex;align-items:center;gap:10px;">
+                  <span style="font-size:12px;color:{{ subColor }};">{{ m.date }}</span>
+                  <button onClick="{{ m.onDelete }}" aria-label="Delete message" style="border:none;background:none;cursor:pointer;padding:4px;"><span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;"></span></button>
+                </div>
+              </div>
+              <div style="font-size:14px;line-height:1.5;color:{{ bodyColor }};">{{ m.msg }}</div>
+            </div>
+          </sc-for>
+          <sc-if value="{{ publicEmpty }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size:14px;color:{{ subColor }};text-align:center;padding:20px 0;">No messages yet — be the first!</p>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ projectsOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeProjectsModal }}" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;animation:fadeIn 0.2s ease both;">
+      <div onClick="{{ stopPropagation }}" style="background:{{ bg }};border:1px solid {{ cardBorder }};border-radius:20px;max-width:640px;width:100%;max-height:85vh;overflow-y:auto;padding:36px;position:relative;">
+        <button onClick="{{ closeProjectsModal }}" style="position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;border:1px solid {{ cardBorder }};background:{{ cardBg }};color:{{ headColor }};font-size:18px;cursor:pointer;">✕</button>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:6px;">
+          <h2 style="font-size:22px;font-weight:700;color:{{ headColor }};margin:0;">💼 Projects</h2>
+          <button onClick="{{ openProjectAdd }}" title="Admin: add project" style="border:none;background:none;color:{{ subColor }};cursor:pointer;font-size:16px;padding:4px;">🔒</button>
+        </div>
+        <p style="font-size:14px;color:{{ bodyColor }};margin:0 0 20px;">A look at work I have shipped.</p>
+
+        <sc-if value="{{ projectAddOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="{{ cardStyle }}padding:18px;margin-bottom:20px;">
+            <input value="{{ projTitle }}" onChange="{{ onProjTitleChange }}" placeholder="Title" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;margin-bottom:10px;">
+            <textarea value="{{ projOverview }}" onChange="{{ onProjOverviewChange }}" placeholder="Project overview" rows="3" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;resize:vertical;margin-bottom:10px;"></textarea>
+            <input value="{{ projLink }}" onChange="{{ onProjLinkChange }}" placeholder="Project link" style="width:100%;padding:10px 12px;border-radius:8px;border:1px solid {{ cardBorder }};background:{{ bg }};color:{{ headColor }};font-size:14px;font-family:inherit;margin-bottom:12px;">
+            <div style="display:flex;gap:8px;justify-content:flex-end;">
+              <button onClick="{{ cancelProjectAdd }}" style="padding:8px 16px;border-radius:999px;border:1px solid {{ cardBorder }};background:none;color:{{ subColor }};font-size:13px;cursor:pointer;font-family:inherit;">Cancel</button>
+              <button onClick="{{ submitProject }}" disabled="{{ projDisabled }}" style="padding:8px 18px;border-radius:999px;border:none;background:{{ headColor }};color:{{ bg }};font-weight:700;font-size:13px;cursor:pointer;opacity:{{ projButtonOpacity }};font-family:inherit;">Add Project</button>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-for list="{{ projects }}" as="pr" hint-placeholder-count="0">
+          <div style="{{ cardStyle }}padding:16px 18px;margin-bottom:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid {{ cardBorder }};padding-bottom:8px;">
+              <span style="font-size:16px;font-weight:700;color:{{ headColor }};">{{ pr.title }}</span>
+              <button onClick="{{ pr.onDelete }}" aria-label="Delete project" style="border:none;background:none;cursor:pointer;padding:4px;flex:none;"><span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;"></span></button>
+            </div>
+            <div style="font-size:14px;line-height:1.5;color:{{ bodyColor }};margin-top:8px;padding-bottom:8px;border-bottom:1px solid {{ cardBorder }};">{{ pr.overview }}</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+              <a href="{{ pr.link }}" target="_blank" rel="noopener noreferrer" aria-label="Open link" style="width:22px;height:22px;flex:none;border-radius:50%;background:#22c55e;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;">↗</a>
+              <a href="{{ pr.link }}" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:{{ subColor }};">{{ pr.link }}</a>
+            </div>
+          </div>
+        </sc-for>
+        <sc-if value="{{ projectsEmpty }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size:14px;color:{{ subColor }};text-align:center;padding:20px 0;">No projects yet — stay tuned!</p>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  </main>
+  <footer style="max-width:1280px;margin:0 auto;padding:80px clamp(20px,5vw,40px) 100px;text-align:center;">
+    <h2 data-reveal="1" style="font-size:32px;font-weight:700;color:{{ headColor }};margin:0 0 30px;opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;">Get in touch!</h2>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="https://www.linkedin.com/in/hussnain-ali-top-rated" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn" style="{{ socialIconStyle }}">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.98 9h4v12h-4V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96V21h-4V9z"></path></svg>
+      </a>
+      <a href="https://x.com/HasNainALiTwet" target="_blank" rel="noopener noreferrer me" aria-label="X" style="{{ socialIconStyle }}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2h3.05l-6.67 7.62L22.5 22h-6.2l-4.86-6.36L5.8 22H2.75l7.13-8.15L1.5 2h6.35l4.4 5.82L18.24 2zm-1.07 18.16h1.7L7.9 3.75H6.08l11.09 16.41z"></path></svg>
+      </a>
+      <a href="https://www.instagram.com/itshussnainalirajput" target="_blank" rel="noopener noreferrer me" aria-label="Instagram" style="{{ socialIconStyle }}">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"></circle></svg>
+      </a>
+      <a href="https://www.upwork.com/freelancers/~013eedfa62fd7269a3" target="_blank" rel="noopener noreferrer me" aria-label="Upwork" style="{{ socialIconStyle }}font-weight:800;font-size:14px;letter-spacing:-0.5px;font-family:Georgia,serif;">Up</a>
+      <a href="mailto:metasocialmanager@gmail.com" target="_blank" aria-label="Email" style="{{ socialIconStyle }}">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+      </a>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { theme: 'dark', roleIndex: 0, skillsModalOpen: false, comingSoonOpen: false, publicOpen: false, publicComposeOpen: false, publicName: '', publicMsg: '', publicMessages: [], adminAddOpen: false, resTitle: '', resUrl: '', resDesc: '', resources: [], blogAddOpen: false, blogTitle: '', blogBody: '', blogPosts: [], projectsOpen: false, projectAddOpen: false, projTitle: '', projOverview: '', projLink: '', projects: [], dataLoading: true };
+  roles = ['Virtual Assistant', 'Business Operations Manager', 'Social Media Manager', 'Community Manager', 'Sales & Monetization Specialist', 'CRM & Automation Expert'];
+
+  componentDidMount() {
+    const saved = localStorage.getItem('pf-theme');
+    if (saved === 'light' || saved === 'dark') this.setState({ theme: saved });
+
+    this.sb = window.supabase.createClient(
+      'https://qmafpvgxcmcdobirmxbv.supabase.co',
+      'sb_publishable_Mc16GF1kjQD5Yhp0vRTDFw_esd8zYPR'
+    );
+    this.loadAll();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+    this._revealObserver = observer;
+
+    this._roleTimer = setInterval(() => {
+      this.setState((s) => ({ roleIndex: (s.roleIndex + 1) % this.roles.length }));
+    }, 3500);
+  }
+
+  componentWillUnmount() {
+    if (this._revealObserver) this._revealObserver.disconnect();
+    if (this._roleTimer) clearInterval(this._roleTimer);
+  }
+
+  async loadAll() {
+    const [m, r, b, p] = await Promise.all([
+      this.sb.from('public_messages').select('*').order('created_at', { ascending: false }),
+      this.sb.from('resources').select('*').order('created_at', { ascending: false }),
+      this.sb.from('blog_posts').select('*').order('created_at', { ascending: false }),
+      this.sb.from('projects').select('*').order('created_at', { ascending: false }),
+    ]);
+    this.setState({
+      publicMessages: (m.data || []).map(x => ({ id: x.id, name: x.name, msg: x.msg, date: new Date(x.created_at).toLocaleDateString() })),
+      resources: (r.data || []).map(x => ({ id: x.id, title: x.title, url: x.url, desc: x.description })),
+      blogPosts: (b.data || []).map(x => ({ id: x.id, title: x.title, body: x.body, date: new Date(x.created_at).toLocaleDateString() })),
+      projects: (p.data || []).map(x => ({ id: x.id, title: x.title, overview: x.overview, link: x.link })),
+      dataLoading: false,
+    });
+  }
+
+  async deletePublicMsg(id) {
+    const code = window.prompt('Enter 4-digit admin code to delete this message:');
+    if (code === null) return;
+    if (code !== '01122') { window.alert('Incorrect code.'); return; }
+    await this.sb.from('public_messages').delete().eq('id', id);
+    this.loadAll();
+  }
+
+  async deleteResource(id) {
+    const code = window.prompt('Enter 4-digit admin code to delete this resource:');
+    if (code === null) return;
+    if (code !== '01122') { window.alert('Incorrect code.'); return; }
+    await this.sb.from('resources').delete().eq('id', id);
+    this.loadAll();
+  }
+
+  async deleteBlogPost(id) {
+    const code = window.prompt('Enter 4-digit admin code to delete this post:');
+    if (code === null) return;
+    if (code !== '01122') { window.alert('Incorrect code.'); return; }
+    await this.sb.from('blog_posts').delete().eq('id', id);
+    this.loadAll();
+  }
+
+  async deleteProject(id) {
+    const code = window.prompt('Enter 4-digit admin code to delete this project:');
+    if (code === null) return;
+    if (code !== '01122') { window.alert('Incorrect code.'); return; }
+    await this.sb.from('projects').delete().eq('id', id);
+    this.loadAll();
+  }
+
+  setTheme(t) {
+    this.setState({ theme: t });
+    localStorage.setItem('pf-theme', t);
+  }
+
+  renderVals() {
+    const dark = this.state.theme === 'dark';
+    const bg = dark ? 'oklch(0.16 0.005 285)' : 'oklch(0.98 0.003 285)';
+    const headColor = dark ? 'oklch(0.97 0.003 285)' : 'oklch(0.18 0.005 285)';
+    const bodyColor = dark ? 'oklch(0.72 0.01 285)' : 'oklch(0.42 0.01 285)';
+    const subColor = dark ? 'oklch(0.62 0.01 285)' : 'oklch(0.5 0.01 285)';
+    const cardBg = dark ? 'oklch(0.21 0.006 285)' : 'oklch(0.95 0.004 285)';
+    const cardBorder = dark ? 'oklch(0.28 0.006 285)' : 'oklch(0.88 0.005 285)';
+
+    const fontStack = "'Poppins', 'Segoe UI', sans-serif";
+    const wordCount = this.state.publicMsg.trim() ? this.state.publicMsg.trim().split(/\s+/).filter(Boolean).length : 0;
+    const publicDisabled = !this.state.publicName.trim() || !this.state.publicMsg.trim() || wordCount > 100;
+
+    return {
+      pageStyle: `min-height:100vh;background:${bg};font-family:${fontStack};transition:background 0.2s;`,
+      dataLoading: this.state.dataLoading,
+      bg, headColor, bodyColor, subColor, cardBorder, cardBg,
+      roleIndex: this.state.roleIndex, currentRole: this.roles[this.state.roleIndex],
+      skillsModalOpen: this.state.skillsModalOpen,
+      openSkillsModal: () => this.setState({ skillsModalOpen: true }),
+      closeSkillsModal: () => this.setState({ skillsModalOpen: false }),
+      comingSoonOpen: this.state.comingSoonOpen,
+      openComingSoonModal: () => this.setState({ comingSoonOpen: true }),
+      closeComingSoonModal: () => this.setState({ comingSoonOpen: false, adminAddOpen: false }),
+      adminAddOpen: this.state.adminAddOpen,
+      resTitle: this.state.resTitle,
+      resUrl: this.state.resUrl,
+      resDesc: this.state.resDesc,
+      resDisabled: !this.state.resTitle.trim() || !this.state.resUrl.trim() || !this.state.resDesc.trim(),
+      resButtonOpacity: (!this.state.resTitle.trim() || !this.state.resUrl.trim() || !this.state.resDesc.trim()) ? 0.5 : 1,
+      resources: this.state.resources.map((r) => ({ ...r, onDelete: () => this.deleteResource(r.id) })),
+      resourcesEmpty: this.state.resources.length === 0,
+      onResTitleChange: (e) => this.setState({ resTitle: e.target.value }),
+      onResUrlChange: (e) => this.setState({ resUrl: e.target.value }),
+      onResDescChange: (e) => this.setState({ resDesc: e.target.value }),
+      openAdminAdd: () => {
+        const code = window.prompt('Enter admin code to add a resource:');
+        if (code === null) return;
+        if (code !== '01122') { window.alert('Incorrect code.'); return; }
+        this.setState({ adminAddOpen: true });
+      },
+      cancelAdminAdd: () => this.setState({ adminAddOpen: false, resTitle: '', resUrl: '', resDesc: '' }),
+      submitResource: async () => {
+        if (!this.state.resTitle.trim() || !this.state.resUrl.trim() || !this.state.resDesc.trim()) return;
+        await this.sb.from('resources').insert({ title: this.state.resTitle.trim(), url: this.state.resUrl.trim(), description: this.state.resDesc.trim() });
+        this.setState({ resTitle: '', resUrl: '', resDesc: '', adminAddOpen: false });
+        this.loadAll();
+      },
+      blogAddOpen: this.state.blogAddOpen,
+      blogTitle: this.state.blogTitle,
+      blogBody: this.state.blogBody,
+      blogDisabled: !this.state.blogTitle.trim() || !this.state.blogBody.trim(),
+      blogButtonOpacity: (!this.state.blogTitle.trim() || !this.state.blogBody.trim()) ? 0.5 : 1,
+      blogPosts: this.state.blogPosts.map((b) => ({ ...b, onDelete: () => this.deleteBlogPost(b.id) })),
+      blogEmpty: this.state.blogPosts.length === 0,
+      onBlogTitleChange: (e) => this.setState({ blogTitle: e.target.value }),
+      onBlogBodyChange: (e) => this.setState({ blogBody: e.target.value }),
+      openBlogAdd: () => {
+        const code = window.prompt('Enter admin code to add a blog post:');
+        if (code === null) return;
+        if (code !== '01122') { window.alert('Incorrect code.'); return; }
+        this.setState({ blogAddOpen: true });
+      },
+      cancelBlogAdd: () => this.setState({ blogAddOpen: false, blogTitle: '', blogBody: '' }),
+      submitBlogPost: async () => {
+        if (!this.state.blogTitle.trim() || !this.state.blogBody.trim()) return;
+        await this.sb.from('blog_posts').insert({ title: this.state.blogTitle.trim(), body: this.state.blogBody.trim() });
+        this.setState({ blogTitle: '', blogBody: '', blogAddOpen: false });
+        this.loadAll();
+      },
+      projectsOpen: this.state.projectsOpen,
+      openProjectsModal: () => this.setState({ projectsOpen: true }),
+      closeProjectsModal: () => this.setState({ projectsOpen: false, projectAddOpen: false }),
+      projectAddOpen: this.state.projectAddOpen,
+      projTitle: this.state.projTitle,
+      projOverview: this.state.projOverview,
+      projLink: this.state.projLink,
+      projDisabled: !this.state.projTitle.trim() || !this.state.projOverview.trim() || !this.state.projLink.trim(),
+      projButtonOpacity: (!this.state.projTitle.trim() || !this.state.projOverview.trim() || !this.state.projLink.trim()) ? 0.5 : 1,
+      projects: this.state.projects.map((pr) => ({ ...pr, onDelete: () => this.deleteProject(pr.id) })),
+      projectsEmpty: this.state.projects.length === 0,
+      onProjTitleChange: (e) => this.setState({ projTitle: e.target.value }),
+      onProjOverviewChange: (e) => this.setState({ projOverview: e.target.value }),
+      onProjLinkChange: (e) => this.setState({ projLink: e.target.value }),
+      openProjectAdd: () => {
+        const code = window.prompt('Enter admin code to add a project:');
+        if (code === null) return;
+        if (code !== '01122') { window.alert('Incorrect code.'); return; }
+        this.setState({ projectAddOpen: true });
+      },
+      cancelProjectAdd: () => this.setState({ projectAddOpen: false, projTitle: '', projOverview: '', projLink: '' }),
+      submitProject: async () => {
+        if (!this.state.projTitle.trim() || !this.state.projOverview.trim() || !this.state.projLink.trim()) return;
+        await this.sb.from('projects').insert({ title: this.state.projTitle.trim(), overview: this.state.projOverview.trim(), link: this.state.projLink.trim() });
+        this.setState({ projTitle: '', projOverview: '', projLink: '', projectAddOpen: false });
+        this.loadAll();
+      },
+      stopPropagation: (e) => e.stopPropagation(),
+      publicOpen: this.state.publicOpen,
+      publicName: this.state.publicName,
+      publicMsg: this.state.publicMsg,
+      publicWordCount: wordCount,
+      publicDisabled: publicDisabled,
+      publicButtonOpacity: publicDisabled ? 0.5 : 1,
+      publicMessages: this.state.publicMessages.map((m) => ({ ...m, onDelete: () => this.deletePublicMsg(m.id) })),
+      publicEmpty: this.state.publicMessages.length === 0,
+      publicCountLabel: this.state.publicMessages.length === 1 ? '1 message' : `${this.state.publicMessages.length} messages`,
+      publicComposeOpen: this.state.publicComposeOpen,
+      publicComposeClosed: !this.state.publicComposeOpen,
+      openPublicModal: () => this.setState({ publicOpen: true, publicComposeOpen: false, publicName: '', publicMsg: '' }),
+      closePublicModal: () => this.setState({ publicOpen: false }),
+      openPublicCompose: () => this.setState({ publicComposeOpen: true }),
+      cancelPublicCompose: () => this.setState({ publicComposeOpen: false, publicName: '', publicMsg: '' }),
+      onPublicNameChange: (e) => this.setState({ publicName: e.target.value }),
+      onPublicMsgChange: (e) => {
+        const words = e.target.value.trim().split(/\s+/).filter(Boolean);
+        if (words.length <= 100) this.setState({ publicMsg: e.target.value });
+      },
+      submitPublicMsg: async () => {
+        if (publicDisabled) return;
+        const last = Number(localStorage.getItem('pf-last-post') || 0);
+        if (Date.now() - last < 30000) { window.alert('Please wait a moment before posting again.'); return; }
+        localStorage.setItem('pf-last-post', String(Date.now()));
+        await this.sb.from('public_messages').insert({ name: this.state.publicName.trim(), msg: this.state.publicMsg.trim() });
+        this.setState({ publicName: '', publicMsg: '', publicComposeOpen: false });
+        this.loadAll();
+      },
+      accentGlow: dark ? 'oklch(0.4 0.09 280 / 0.5)' : 'oklch(0.85 0.07 280 / 0.6)',
+      toggleBg: dark ? 'oklch(0.24 0.006 285)' : 'oklch(0.92 0.005 285)',
+      sunBtnStyle: `width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;background:${dark ? 'transparent' : 'oklch(0.99 0.003 285)'};color:${dark ? subColor : headColor};`,
+      moonBtnStyle: `width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;background:${dark ? 'oklch(0.32 0.02 285)' : 'transparent'};color:${dark ? '#fff' : subColor};`,
+      setLight: () => this.setTheme('light'),
+      setDark: () => this.setTheme('dark'),
+      linkedinBtnStyle: `display:inline-flex;align-items:center;justify-content:center;padding:16px 32px;border-radius:999px;border:1.5px solid ${headColor};color:${headColor};font-weight:600;font-size:16px;`,
+      cardStyle: `display:block;background:${cardBg};border:1px solid ${cardBorder};border-radius:18px;padding:28px 26px;transition:transform 0.15s,border-color 0.15s;`,
+      chipStyle: `flex:none;padding:6px 14px;border-radius:999px;background:${bg};border:1px solid ${cardBorder};font-size:13px;font-weight:600;color:${subColor};`,
+      socialIconStyle: `width:46px;height:46px;border-radius:50%;background:${cardBg};border:1px solid ${cardBorder};display:flex;align-items:center;justify-content:center;font-size:18px;color:${headColor};`,
+      achieveBarStyle: `margin-top:28px;display:flex;flex-wrap:wrap;gap:24px;justify-content:center;text-align:center;padding:20px 28px;border-radius:14px;background:${dark ? 'oklch(0.24 0.02 260)' : 'oklch(0.16 0.02 260)'};color:#fff;font-size:15px;font-weight:600;`,
+      pillars: [
+        { emoji: '🧰', title: 'My Skills & Expertise', desc: 'All skills, tools & platforms.', href: '#skills', isSkills: true, isProjects: false, isLearnFree: false, isPublic: false },
+        { emoji: '💼', title: 'Projects', desc: 'A look at work I have shipped.', href: '#', isSkills: false, isProjects: true, isLearnFree: false, isPublic: false },
+        { emoji: '🔍', title: 'Public', desc: 'Send a message or leave feedback.', href: '#', isSkills: false, isProjects: false, isLearnFree: false, isPublic: true },
+        { emoji: '📚', title: 'Learn Free', desc: 'Free resources material for everyone.', href: '#', isSkills: false, isProjects: false, isLearnFree: true, isPublic: false },
+      ],
+      sides: [
+        { emoji: '🎧', title: 'Virtual Assistance', desc: 'Virtual assistant, administrative support, client communication, team coordination.' },
+        { emoji: '📱', title: 'Social Media Management', desc: 'Managing Instagram, Facebook, TikTok & YouTube; uploading videos & content management.' },
+        { emoji: '👥', title: 'Community Management', desc: 'Managing Skool, Discord, Telegram & Facebook communities; member engagement & retention.' },
+        { emoji: '⭐', title: 'Influencer Management', desc: 'Handling influencers, collaboration coordination, relationship building, campaign support.' },
+        { emoji: '📈', title: 'Sales & Monetization', desc: 'Direct messaging sales, membership upselling, converting monthly to yearly plans, audience retention.' },
+        { emoji: '💬', title: 'Customer Engagement', desc: 'One-on-one member communication, customer support, building strong relationships.' },
+        { emoji: '🎥', title: 'Content Management', desc: 'Uploading videos, scheduling & managing posts, multi-platform content publishing.' },
+        { emoji: '🔍', title: 'Research Skills', desc: 'Competitor research, transcript extraction, market research, content & strategy research.' },
+        { emoji: '⚙️', title: 'CRM & Automation', desc: 'ManyChat automation, HubSpot CRM, lead generation & nurturing, workflow setup.' },
+        { emoji: '🖥️', title: 'Webinar & Course Platforms', desc: 'WebinarJam setup & management, Kajabi courses & memberships, funnels & products.' },
+        { emoji: '🗨️', title: 'Communication Tools', desc: 'Slack, Discord & Telegram for team, community and channel management.' },
+        { emoji: '🤖', title: 'AI & Productivity Tools', desc: 'ChatGPT & AI tools, AI extractors, Google Workspace, Microsoft Office.' },
+        { emoji: '🌐', title: 'Website Management', desc: 'Website updates & management, online operations, landing pages & content updates.' },
+        { emoji: '📊', title: 'Business & Strategy Support', desc: 'Market analysis, content repurposing, strategy implementation, reporting & performance tracking.' },
+        { emoji: '🏆', title: 'Achievements', desc: 'Top Rated on Upwork, 100% Job Success Score, managed multiple communities & online businesses.' },
+      ],
+
+    };
+  }
+}
+
+</script>
+</body>
+</html>
